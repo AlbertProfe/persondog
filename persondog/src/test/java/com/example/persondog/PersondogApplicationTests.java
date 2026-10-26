@@ -58,8 +58,8 @@ class PersondogApplicationTests {
 
 		personRepository.save(person);
 
-		//person = personRepository.findById("p-001").get();
-		//System.out.println(person);
+		person = personRepository.findById("p-001").get();
+		System.out.println(person.getName());
 
 	}
 
