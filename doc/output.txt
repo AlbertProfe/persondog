@@ -1,0 +1,52 @@
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v4.1.2)
+
+2026-10-26T10:40:57.005+01:00  INFO 98892 --- [demo] [  restartedMain] c.e.persondog.PersondogApplication       : Starting PersondogApplication using Java 24.0.1 with PID 98892 (/home/albert/MyProjects/Sandbox/PersonDog/persondog/target/classes started by albert in /home/albert/MyProjects/Sandbox/PersonDog/persondog)
+2026-10-26T10:40:57.011+01:00  INFO 98892 --- [demo] [  restartedMain] c.e.persondog.PersondogApplication       : No active profile set, falling back to 1 default profile: "default"
+2026-10-26T10:40:57.095+01:00  INFO 98892 --- [demo] [  restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-10-26T10:40:57.096+01:00  INFO 98892 --- [demo] [  restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-10-26T10:40:57.946+01:00  INFO 98892 --- [demo] [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-10-26T10:40:58.005+01:00  INFO 98892 --- [demo] [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 48 ms. Found 2 JPA repository interfaces.
+2026-10-26T10:40:58.687+01:00  INFO 98892 --- [demo] [  restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2026-10-26T10:40:58.703+01:00  INFO 98892 --- [demo] [  restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-10-26T10:40:58.704+01:00  INFO 98892 --- [demo] [  restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.27]
+2026-10-26T10:40:58.738+01:00  INFO 98892 --- [demo] [  restartedMain] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 1642 ms
+2026-10-26T10:40:58.931+01:00  INFO 98892 --- [demo] [  restartedMain] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-10-26T10:40:59.012+01:00  INFO 98892 --- [demo] [  restartedMain] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.4.13.Final
+2026-10-26T10:40:59.513+01:00  INFO 98892 --- [demo] [  restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-10-26T10:40:59.546+01:00  INFO 98892 --- [demo] [  restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-10-26T10:40:59.740+01:00  INFO 98892 --- [demo] [  restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:/home/albert/MyProjects/Sandbox/PersonDog/db/persondogdb user=ALBERT
+2026-10-26T10:40:59.744+01:00  INFO 98892 --- [demo] [  restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-10-26T10:40:59.768+01:00  WARN 98892 --- [demo] [  restartedMain] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-10-26T10:40:59.800+01:00  INFO 98892 --- [demo] [  restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:h2:/home/albert/MyProjects/Sandbox/PersonDog/db/persondogdb]
+	Database driver: H2 JDBC Driver
+	Database dialect: H2Dialect
+	Database version: 2.4.240
+	Default catalog/schema: PERSONDOGDB/PUBLIC
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: 100
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-10-26T10:41:00.623+01:00  INFO 98892 --- [demo] [  restartedMain] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-10-26T10:41:00.682+01:00  INFO 98892 --- [demo] [  restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-10-26T10:41:00.785+01:00  INFO 98892 --- [demo] [  restartedMain] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-10-26T10:41:00.979+01:00  WARN 98892 --- [demo] [  restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-10-26T10:41:01.293+01:00  INFO 98892 --- [demo] [  restartedMain] o.s.b.h.a.H2ConsoleAutoConfiguration     : H2 console available at '/h2-console'. Database available at 'jdbc:h2:/home/albert/MyProjects/Sandbox/PersonDog/db/persondogdb'
+2026-10-26T10:41:01.339+01:00  INFO 98892 --- [demo] [  restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
+2026-10-26T10:41:01.346+01:00  INFO 98892 --- [demo] [  restartedMain] c.e.persondog.PersondogApplication       : Started PersondogApplication in 4.859 seconds (process running for 5.588)
+Hibernate: select p1_0.id,p1_0.age,p1_0.name from person p1_0 where p1_0.id=?
+Hibernate: select d1_0.id,d1_0.age,d1_0.breed,d1_0.name from dog d1_0 where d1_0.id=?
+Hibernate: select p1_0.id,p1_0.age,p1_0.name from person p1_0 where p1_0.id=?
+Person saved: Optional[Person(id=1, name=John, age=30)]
+Hibernate: select d1_0.id,d1_0.age,d1_0.breed,d1_0.name from dog d1_0 where d1_0.id=?
+Dog saved: Optional[Dog(id=1, name=Buddy, breed=Golden Retriever, age=5)]
