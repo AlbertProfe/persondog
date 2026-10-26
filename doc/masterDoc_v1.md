@@ -32,6 +32,10 @@ Each JPA relationship variant lives on its own git branch so the approaches can 
 
 ### Branch topology
 
+![](https://raw.githubusercontent.com/AlbertProfe/persondog/refs/heads/master/doc/git-graph-ide.png)
+
+
+
 All five approach branches fork from the same commit on `master` (`fix: paths and clear classes`) and grow their own mapping + test commits independently:
 
 ```mermaid
@@ -41,34 +45,31 @@ gitGraph
     commit id: "doc: masterDoc created"
     commit id: "feat: dog & person repositories + classes"
     commit id: "feat: application.properties"
-    commit id: "fix: paths and clear classes"
+    commit id: "fix: paths and clear classes" type: HIGHLIGHT
     branch jpa-onetoone-approach
-    commit id: "feat: lombok"
-    commit id: "feat: @OneToOne mapping + tests"
+    commit id: "feat: lombok (1:1)"
     checkout master
     branch jpa-onetomany-uni-approach
-    commit id: "feat: lombok"
-    commit id: "feat: @OneToMany uni mapping + tests"
+    commit id: "feat: lombok (1:N uni)"
     checkout master
     branch jpa-onetomany-bi-approach
-    commit id: "feat: lombok"
-    commit id: "feat: @OneToMany bi mapping + tests"
+    commit id: "feat: lombok (1:N bi)"
     checkout master
     branch jpa-manytomany-approach
-    commit id: "feat: lombok"
-    commit id: "feat: @ManyToMany mapping + tests"
+    commit id: "feat: lombok (M:N)"
     checkout master
     branch jpa-manytomany-ta-entity-approach
-    commit id: "feat: lombok"
-    commit id: "feat: link entity (Adoption) + tests"
+    commit id: "feat: lombok (M:N entity)"
     checkout master
     commit id: "doc: images"
-    commit id: "feat: lombok"
+    commit id: "feat: lombok (master)"
     commit id: "feat: commandlinerunner"
     commit id: "doc: jpa smoke-test"
+    commit id: "doc: masterDoc_v1.md updated"
+    commit id: "doc: git-graph-ide"
 ```
 
-> The `feat: lombok` commit exists on every branch today; the `... mapping + tests` commits are the target work each branch will carry.
+> Mirrors the real history: all five branches are born **at** `fix: paths and clear classes` (highlighted) and currently carry a single `feat: lombok` commit each. The mapping + tests work still lives ahead on every branch.
 
 Checkout an approach:
 
