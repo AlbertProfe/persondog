@@ -10,4 +10,10 @@ class PersondogApplicationTests {
 	void contextLoads() {
 	}
 
+
+	@Test
+	void testJPA() {
+
+	}
+
 }
