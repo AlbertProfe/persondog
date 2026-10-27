@@ -76,8 +76,12 @@ class PersonDogManyToManyTest {
         ada.addDog(rex);
         bob.addDog(rex); // same dog, two owners
 
-        personRepository.save(ada);
-        personRepository.save(bob);
+        // persist() seeds the whole transient graph in one pass.
+        // save() would merge: the second merge reattaches rex while its
+        // inverse 'owners' collection still references a transient bob,
+        // causing ObjectRetrievalFailureException — a real M:N pitfall.
+        entityManager.persist(ada);
+        entityManager.persist(bob);
         entityManager.flush();
 
         Integer rows = jdbcTemplate.queryForObject(
